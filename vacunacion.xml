@@ -1,0 +1,140 @@
+ <database>
+  <!-- Tabla lotes -->
+  <lotes>
+    <codigo>L0101</codigo>
+    <fabricante>Bayer</fabricante>
+    <fechafabricacion>2021-01-01</fechafabricacion>
+  </lotes>
+  <lotes>
+    <codigo>L0202</codigo>
+    <fabricante>Jhonson</fabricante>
+    <fechafabricacion>2021-01-03</fechafabricacion>
+  </lotes>
+  <lotes>
+    <codigo>L0303</codigo>
+    <fabricante>PG</fabricante>
+    <fechafabricacion>2021-01-03</fechafabricacion>
+  </lotes>
+  <lotes>
+    <codigo>L0404</codigo>
+    <fabricante>Merck</fabricante>
+    <fechafabricacion>2021-01-04</fechafabricacion>
+  </lotes>
+  <lotes>
+    <codigo>L0505</codigo>
+    <fabricante>Roche</fabricante>
+    <fechafabricacion>2021-01-05</fechafabricacion>
+  </lotes>
+  <!-- Tabla pacientes -->
+  <pacientes>
+    <codigo>0001</codigo>
+    <nombre>María</nombre>
+    <apellido1>Pérez</apellido1>
+    <apellido2>Lòpez</apellido2>
+    <fechanacimiento>2010-01-25</fechanacimiento>
+  </pacientes>
+  <pacientes>
+    <codigo>0002</codigo>
+    <nombre>Carlos</nombre>
+    <apellido1>Prats</apellido1>
+    <apellido2>Alma</apellido2>
+    <fechanacimiento>2008-12-10</fechanacimiento>
+  </pacientes>
+  <pacientes>
+    <codigo>0003</codigo>
+    <nombre>José</nombre>
+    <apellido1>Molina</apellido1>
+    <apellido2>Durán</apellido2>
+    <fechanacimiento>2009-06-06</fechanacimiento>
+  </pacientes>
+  <pacientes>
+    <codigo>0004</codigo>
+    <nombre>Carla</nombre>
+    <apellido1>Jiménez</apellido1>
+    <apellido2>Fuertes</apellido2>
+    <fechanacimiento>2013-04-20</fechanacimiento>
+  </pacientes>
+  <pacientes>
+    <codigo>0005</codigo>
+    <nombre>Elisa</nombre>
+    <apellido1>Cremades</apellido1>
+    <apellido2>Parla</apellido2>
+    <fechanacimiento>2022-05-05</fechanacimiento>
+  </pacientes>
+  <!-- Tabla vacunacion -->
+  <vacunacion>
+    <paciente>0001</paciente>
+    <vacuna>11111</vacuna>
+    <lote>L0101</lote>
+    <dosis>1</dosis>
+    <fechaadministracion>2021-10-05</fechaadministracion>
+  </vacunacion>
+  <vacunacion>
+    <paciente>0001</paciente>
+    <vacuna>11111</vacuna>
+    <lote>L0707</lote>
+    <dosis>2</dosis>
+    <fechaadministracion>2021-11-12</fechaadministracion>
+  </vacunacion>
+  <vacunacion>
+    <paciente>0002</paciente>
+    <vacuna>22222</vacuna>
+    <lote>L0202</lote>
+    <dosis>1</dosis>
+    <fechaadministracion>2021-11-15</fechaadministracion>
+  </vacunacion>
+  <vacunacion>
+    <paciente>0003</paciente>
+    <vacuna>22222</vacuna>
+    <lote>L0303</lote>
+    <dosis>1</dosis>
+    <fechaadministracion>2021-12-01</fechaadministracion>
+  </vacunacion>
+  <vacunacion>
+    <paciente>0004</paciente>
+    <vacuna>33333</vacuna>
+    <lote>L0303</lote>
+    <dosis>1</dosis>
+    <fechaadministracion>2021-12-03</fechaadministracion>
+  </vacunacion>
+  <vacunacion>
+    <paciente>0005</paciente>
+    <vacuna>44444</vacuna>
+    <lote>L0101</lote>
+    <dosis>1</dosis>
+    <fechaadministracion>2021-12-05</fechaadministracion>
+  </vacunacion>
+  <vacunacion>
+    <paciente>0005</paciente>
+    <vacuna>55555</vacuna>
+    <lote>L0505</lote>
+    <dosis>1</dosis>
+    <fechaadministracion>2021-12-06</fechaadministracion>
+  </vacunacion>
+  <!-- Tabla vacunas -->
+  <vacunas pais="Estados Unidos">
+    <idvacuna>11111</idvacuna>
+    <nombre>DTaP</nombre>
+    <descripcion>Difteria, Tétanos, Tosferina</descripcion>
+  </vacunas>
+  <vacunas pais="Reino Unido">
+      <idvacuna>22222</idvacuna>
+      <nombre>VPI</nombre>
+      <descripcion>Poliomielitis</descripcion>
+  </vacunas>
+  <vacunas pais="Estados Unidos">
+      <idvacuna>33333</idvacuna>
+      <nombre>HB</nombre>
+      <descripcion>Hepatitis B</descripcion>
+  </vacunas>
+  <vacunas pais="Europa">
+      <idvacuna>44444</idvacuna>
+      <nombre>VNC</nombre>
+      <descripcion>Neumococo conjugada</descripcion>
+  </vacunas>
+  <vacunas pais="Estados Unidos">
+      <idvacuna>55555</idvacuna>
+      <nombre>MenB</nombre>
+      <descripcion>Meningococo B</descripcion>
+  </vacunas>
+</database>
